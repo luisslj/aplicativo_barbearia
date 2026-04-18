@@ -1,0 +1,44 @@
+
+
+🧔 Clientes
+- id → número único do cliente
+- nome → nome completo
+- telefone → contato
+- email → login
+- senha → senha criptografada
+- data_cadastro → quando foi criado
+
+
+💇‍♂️ Barbeiros
+- id → número único do barbeiro
+- nome → nome do barbeiro
+- especialidade → tipo de corte/serviço
+- email → login
+- senha → senha criptografada
+- status → ativo ou inativo
+- data_cadastro → quando foi criado
+
+
+📅 Agendamentos
+- id → número único do agendamento
+- cliente_id → referência ao cliente
+- barbeiro_id → referência ao barbeiro
+- data_hora → data e hora do corte
+- status → pendente, confirmado, cancelado ou concluído
+- observacoes → anotações extras
+
+
+⛔ Bloqueios
+- id → número único do bloqueio
+- barbeiro_id → referência ao barbeiro
+- data_inicio → início do bloqueio
+- data_fim → fim do bloqueio
+- motivo → folga, compromisso, etc.
+- ativo → se o bloqueio está valendo ou não
+
+
+🌐 Como tudo se conecta
+- O cliente agenda → o sistema olha se o barbeiro tem bloqueio.
+- O barbeiro pode bloquear → o sistema impede que clientes agendem nesse período.
+- Tudo fica registrado em agendamentos e bloqueios, com ligações claras entre tabelas.
+
