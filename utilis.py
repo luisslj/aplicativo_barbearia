@@ -53,7 +53,7 @@ def escolha_barbeiro(barbeiro):
     return barbeiro
 
 
-barbeiro1 = escolha_barbeiro(escolha3)
-dia_escohido = calendario(escolha1)
-hora_escolhida = horario(escolha2)
-print(f'Agendado para o dia {dia_escohido} as {hora_escolhida} com o barbeiro {barbeiro1}')
+#barbeiro1 = escolha_barbeiro(escolha3)
+#dia_escohido = calendario(escolha1)
+#hora_escolhida = horario(escolha2)
+#print(f'Agendado para o dia {dia_escohido} as {hora_escolhida} com o barbeiro {barbeiro1}')
